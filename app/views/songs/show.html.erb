@@ -1,3 +1,8 @@
 <h1>Songs#show</h1>
 
-Title: <%= @song.title %>
+Title: <%= @song.title %><br>
+
+Notes:
+<% @song.notes.each do |note| %>
+  <p><%= note.content %></p>
+<% end %>
